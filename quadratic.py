@@ -1,3 +1,5 @@
+# Replace the "ANSWER HERE" for your answer
+
 def roots(a, b, c):
     if (b**2-4*a*c)>=0:
         raiz_1 = (b*-1 + (b**2-4*a*c)**0.5)/2*a
@@ -20,20 +22,17 @@ def to_string(a, b, c):
     elif a == 0 and b != 0 and c != 0:
         function = f"f(x) = {b} * X + {c}"
         return function
-    elif a != 0 and b ==0 and c != 0:
+    elif a == 0 and b == 0:
+        function = f"f(x) = {c}"
+        return function
+    elif a != 0 and b == 0 and c != 0:
         function = f"f(x) = {a} * X^2 + {c}"
         return function
-    elif a != 0 and b != 0 and c == 0:
-        function = f"f(x) {a} * X^2 + {b} * X"
-        return function
-    elif a == 0 and b == 0 and c != 0:
-        function = f"f(x) = {c}" 
-        return function
     elif a != 0 and b == 0 and c == 0:
-        function = f"f(x) = {a}"
+        function = f"f(x) = {a} * X^2"
         return function
-    elif a == 0 and b == 0 and c == 0:
-        function = f"f(x) = 0"
+    elif a != 0 and b != 0 and c == 0:
+        function
 
 def derivation(a, b, c):
     if a == 0 and b == 0:
