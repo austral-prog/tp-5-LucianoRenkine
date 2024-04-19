@@ -32,7 +32,14 @@ def to_string(a, b, c):
         function = f"f(x) = {a} * X^2"
         return function
     elif a != 0 and b != 0 and c == 0:
-        function
+        function = f"f(x) = {a} * X^2 + {b} * X"
+        return function
+    elif a == 0 and b != 0 and c == 0:
+        function = f"f(x) = {b} * X + {c}"
+        return function
+    elif a == 0 and b == 0 and c == 0:
+        funtion = "f(x) = 0"
+        return function
 
 def derivation(a, b, c):
     if a == 0 and b == 0:
