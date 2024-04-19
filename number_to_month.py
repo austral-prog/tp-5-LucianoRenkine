@@ -1,7 +1,7 @@
 # Replace the "ANSWER HERE" for your answer
 
 def number_to_month(month):
-    if 1<=int(month) and int(month)<=12:
+    if 1<=month and month<=12:
         if month == 1:
             return "enero"
         elif month == 2:
